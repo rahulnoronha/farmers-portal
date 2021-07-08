@@ -180,7 +180,7 @@ def f(name, location, email, number, pref_lan):
             conn.close()
 
         final_label = Label(farm, text='Data registered successfully.', bg='white', fg='black', font=('Calibri', 14))
-        final_label.place(x=1100, y=370)
+        final_label.place(x=1002, y=337)
 
         # clearing the entries
         inv_peas.delete(0, END)
@@ -232,32 +232,32 @@ def f(name, location, email, number, pref_lan):
         return profit_entry
 
     farm = Toplevel()
-    farm.geometry('2000x1000')
+    farm.geometry('1821x911')
     farm.state('zoomed')
     farm.resizable(0, 0)
     farm.config(bg='#ffffff')
-    bg = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\green.png")
+    bg = PhotoImage(file=r"image\green.png")
     label = Label(farm, image=bg)
     label.image = bg
     label.pack()
 
     title = Label(farm, text=trans_arr[0] + "." + "    " + trans_arr[1] + "." + "    " + trans_arr[2] + ".", font=('Britannic Bold', 60), bg='#09baa7', fg='grey')
-    title.place(x=300, y=80)
+    title.place(x=273, y=73)
 
     # name = 'Test Name'
     message = trans_arr[3]+", " + name + "!"
     name_label = Label(farm, text = message, font=('Calibri', 14), bg='#09baa7', fg='black')
-    name_label.place(x=1200, y=20)
+    name_label.place(x=1093, y=18)
 
     # setting up icon image
-    icon = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\sr.png")
+    icon = PhotoImage(file=r"image\sr.png")
     label_icon = Label(farm, image=icon, bg='#09baa7')
     label_icon.image = icon
-    label_icon.place(x=700, y=200)
+    label_icon.place(x=637, y=182)
 
     # intro line
     intro = Label(farm, text=trans_arr[4]+'?', font=('Britannic Bold', 18), bg='#ffffff', fg='grey')
-    intro.place(x=600, y=380)
+    intro.place(x=546, y=346)
 
     # variables for checkbox
     var_pea = IntVar(farm)
@@ -272,83 +272,83 @@ def f(name, location, email, number, pref_lan):
     var_cot = IntVar(farm)
 
     # images for checkboxes
-    pea = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\peas.png")
-    wheat = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\wheat.png")
-    tur = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\turmeric.png")
-    maize = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\maize.png")
-    pad = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\paddy.png")
-    millet = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\millet.png")
-    gn = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\gn.png")
-    sesame = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\sesame.png")
-    barley = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\barley.png")
-    cotton = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\cotton.png")
+    pea = PhotoImage(file=r"image\peas.png")
+    wheat = PhotoImage(file=r"image\wheat.png")
+    tur = PhotoImage(file=r"image\turmeric.png")
+    maize = PhotoImage(file=r"image\maize.png")
+    pad = PhotoImage(file=r"image\paddy.png")
+    millet = PhotoImage(file=r"image\millet.png")
+    gn = PhotoImage(file=r"image\gn.png")
+    sesame = PhotoImage(file=r"image\sesame.png")
+    barley = PhotoImage(file=r"image\barley.png")
+    cotton = PhotoImage(file=r"image\cotton.png")
 
     # checkboxes
     c1 = Checkbutton(farm, text=trans_arr[5], image=pea, compound='left', bg='#ffffff', variable=var_pea)
     c1.image = pea
-    c1.place(x=50, y=430)
+    c1.place(x=46, y=392)
     c3 = Checkbutton(farm, text=trans_arr[6], image=wheat, compound='left', bg='#ffffff', variable=var_wheat)
     c3.image = wheat
-    c3.place(x=350, y=430)
+    c3.place(x=319, y=392)
     c4 = Checkbutton(farm, text=trans_arr[7], image=tur, compound='left', bg='#ffffff', variable=var_tur)
     c4.image = tur
-    c4.place(x=650, y=430)
+    c4.place(x=592, y=392)
     c5 = Checkbutton(farm, text=trans_arr[8], image=maize, compound='left', bg='#ffffff', variable=var_maize)
     c5.iamge = maize
-    c5.place(x=950, y=430)
+    c5.place(x=865, y=392)
     c7 = Checkbutton(farm, text=trans_arr[9], image=pad, compound='left', bg='#ffffff', variable=var_pad)
     c7.image = pad
-    c7.place(x=1250, y=430)
+    c7.place(x=1138, y=392)
     c8 = Checkbutton(farm, text=trans_arr[10], image=millet, compound='left', bg='#ffffff', variable=var_mil)
     c8.image = millet
-    c8.place(x=50, y=620)
+    c8.place(x=46, y=565)
     c9 = Checkbutton(farm, text=trans_arr[11], image=gn, compound='left', bg='#ffffff', variable=var_gn)
     c9.image = gn
-    c9.place(x=350, y=620)
+    c9.place(x=319, y=565)
     c11 = Checkbutton(farm, text=trans_arr[12], image=sesame, compound='left', bg='#ffffff', variable=var_ses)
     c11.image = sesame
-    c11.place(x=650, y=620)
+    c11.place(x=592, y=565)
     c12 = Checkbutton(farm, text=trans_arr[13], image=barley, compound='left', bg='#ffffff', variable=var_bar)
     c12.image = barley
-    c12.place(x=950, y=620)
+    c12.place(x=865, y=565)
     c14 = Checkbutton(farm, text=trans_arr[14], image=cotton, compound='left', bg='#ffffff', variable=var_cot)
     c14.image = cotton
-    c14.place(x=1250, y=620)
+    c14.place(x=1138, y=565)
 
     # Variables for investment and profit
-    inv_peas = investment_repeat(30, 150, 540)
-    pro_peas = profit_repeat(30, 150, 570)
-    inv_wheat = investment_repeat(330, 450, 540)
-    pro_wheat = profit_repeat(330, 450, 570)
-    inv_tur = investment_repeat(630, 750, 540)
-    pro_tur = profit_repeat(630, 750, 570)
-    inv_maize = investment_repeat(930, 1050, 540)
-    pro_maize = profit_repeat(930, 1050, 570)
-    inv_paddy = investment_repeat(1230, 1350, 540)
-    pro_paddy = profit_repeat(1230, 1350, 570)
+    inv_peas = investment_repeat(27, 137, 492)
+    pro_peas = profit_repeat(27, 137, 519)
+    inv_wheat = investment_repeat(301, 410, 492)
+    pro_wheat = profit_repeat(301, 410, 519)
+    inv_tur = investment_repeat(574, 683, 492)
+    pro_tur = profit_repeat(574, 683, 519)
+    inv_maize = investment_repeat(847, 956, 492)
+    pro_maize = profit_repeat(847, 956, 519)
+    inv_paddy = investment_repeat(1120, 1229, 492)
+    pro_paddy = profit_repeat(1120, 1229, 519)
 
     # Second row variables
-    inv_mil = investment_repeat(30, 150, 730)
-    pro_mil = profit_repeat(30, 150, 770)
-    inv_gn = investment_repeat(330, 450, 730)
-    pro_gn = profit_repeat(330, 450, 770)
-    inv_ses = investment_repeat(630, 750, 730)
-    pro_ses = profit_repeat(630, 750, 770)
-    inv_bar = investment_repeat(930, 1050, 730)
-    pro_bar = profit_repeat(930, 1050, 770)
-    inv_cot = investment_repeat(1230, 1350, 730)
-    pro_cot = profit_repeat(1230, 1350, 770)
+    inv_mil = investment_repeat(27, 137, 665)
+    pro_mil = profit_repeat(27, 137, 701)
+    inv_gn = investment_repeat(301, 410, 665)
+    pro_gn = profit_repeat(301, 410, 701)
+    inv_ses = investment_repeat(574, 683, 665)
+    pro_ses = profit_repeat(574, 683, 701)
+    inv_bar = investment_repeat(847, 956, 665)
+    pro_bar = profit_repeat(847, 956, 701)
+    inv_cot = investment_repeat(1120, 1229, 665)
+    pro_cot = profit_repeat(1120, 1229, 701)
 
     # Button
     Butt = Button(farm, text="Submit Info", font=('Calibri', 15), width=15, command=store)
     Butt.configure(bg='#84a9ac', fg='#ffffff')
-    Butt.place(x=900, y=370)
+    Butt.place(x=820, y=337)
 
     def log_out():
         farm.destroy()
 
     # Logout Button
     logout = Button(farm, text = 'Log out', command=log_out, width=10)
-    logout.place(x=1400, y=20)
+    logout.place(x=1275, y=18)
 
     farm.mainloop()

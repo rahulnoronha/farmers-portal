@@ -33,7 +33,7 @@ def basic_layout(location, name):
     root.state('zoomed')
     root.resizable(0, 0)
     root.config(bg='white')
-    green = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\green.png")
+    green = PhotoImage(file=r"image\green.png")
     label = Label(root, image=green)
     label.image = green
     label.place(x=0, y=-220)
@@ -49,16 +49,16 @@ def basic_layout(location, name):
     amount.place(x=1370, y=70)
 
     # images
-    pea = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\peas.png")
-    wheat = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\wheat.png")
-    tur = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\turmeric.png")
-    maize = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\maize.png")
-    pad = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\paddy.png")
-    millet = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\millet.png")
-    gn = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\gn.png")
-    sesame = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\sesame.png")
-    barley = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\barley.png")
-    cotton = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\cotton.png")
+    pea = PhotoImage(file=r"image\peas.png")
+    wheat = PhotoImage(file=r"image\wheat.png")
+    tur = PhotoImage(file=r"image\turmeric.png")
+    maize = PhotoImage(file=r"image\maize.png")
+    pad = PhotoImage(file=r"image\paddy.png")
+    millet = PhotoImage(file=r"image\millet.png")
+    gn = PhotoImage(file=r"image\gn.png")
+    sesame = PhotoImage(file=r"image\sesame.png")
+    barley = PhotoImage(file=r"image\barley.png")
+    cotton = PhotoImage(file=r"image\cotton.png")
 
     # Label for images
     pea_label = Label(root, image=pea, bg='white')
@@ -831,7 +831,7 @@ def page1(name, address, email, number):
     user.resizable(0, 0)
     user.title('MAIN PAGE')
     user.config(bg='white')
-    bg = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\green.png")
+    bg = PhotoImage(file=r"image\green.png")
     label = Label(user, image=bg)
     label.image = bg
     label.pack()
@@ -851,13 +851,13 @@ def page1(name, address, email, number):
     butt.place(x=630, y=550)
 
     #icons
-    icon1 = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\test.png")
+    icon1 = PhotoImage(file=r"image\test.png")
     icon1_label = Label(user, image=icon1, bg='white')
     icon1_label.place(x=400, y=650)
-    icon2 = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\shoppingcart.png")
+    icon2 = PhotoImage(file=r"image\shoppingcart.png")
     icon2_label = Label(user, image=icon2, bg='white')
     icon2_label.place(x=650, y=650)
-    icon3 = PhotoImage(file=r"C:\Users\Riya Savant\PycharmProjects\ADA\image\truck.png")
+    icon3 = PhotoImage(file=r"image\truck.png")
     icon3_label = Label(user, image=icon3, bg='white')
     icon3_label.place(x=900, y=650)
     user.mainloop()

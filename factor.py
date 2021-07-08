@@ -11,6 +11,8 @@ ud = webscrape.u_price
 bang = webscrape.bang_price
 
 def price_reduction(investment, profit):
+    investment = int(investment)
+    profit = int(profit)
     ratio = (investment/profit)*100
     if(ratio>=90):
         return 7
